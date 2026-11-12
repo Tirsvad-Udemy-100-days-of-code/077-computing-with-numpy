@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "computing-with-numpy"
+version = "0.1.0"
+description = "Day 77 of 100 Days of Code: computing with NumPy, solved, tested and documented."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+dependencies = [
+    "numpy>=2.1",
+    "matplotlib>=3.9",
+    "pillow>=11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "ruff>=0.8",
+    "mypy>=1.13",
+    "yamllint>=1.35",
+    "jupyterlab>=4.3",
+    "nbclient>=0.10",
+]
+
+[project.scripts]
+computing-with-numpy = "computing_with_numpy.presentation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+src = ["src", "tests"]
+extend-exclude = ["framework", "notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "ANN", "D"]
+ignore = ["D203", "D213"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D", "ANN"]
+
+[tool.mypy]
+strict = true
+python_version = "3.13"
