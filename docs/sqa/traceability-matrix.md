@@ -39,18 +39,20 @@ updated whenever an artifact instance is created or reviewed.
 | `src/`, `tests/`, `scripts/` (MIL-004) | Python code | - | - | [MIL-004] | - | [RC-013] |
 | [ADR-0001] | ADR | - | - | [BC-001], [MIL-005] | - | [RC-014] |
 | `src/`, `tests/`, `scripts/` (MIL-005) | Python code | - | - | [MIL-005] | - | [RC-015] |
+| `docs/wiki/` (en, da, ms) | Wiki | en, da, ms | - | [MIL-006] | - | [RC-016] |
+| `src/`, `tests/`, `scripts/` (MIL-006) | Python code | - | - | [MIL-006] | - | [RC-017] |
 
 ## Concern Coverage
 
 | Concern (CN-ID) | Views that answer it | Decisions (ADR) | Quality check (TP) | Status |
 | --- | --- | --- | --- | --- |
-| CN-001 | - | - | - | Gap (code not written yet) |
-| CN-002 | - | - | - | Gap (code not written yet) |
-| CN-003 | - | - | - | Gap (code not written yet) |
-| CN-004 | - | - | - | Gap (code not written yet) |
-| CN-005 | - | - | - | Gap (code not written yet) |
-| CN-006 | - | - | - | Gap (code not written yet) |
-| CN-007 | - | - | - | Gap (code not written yet) |
+| CN-001 | [RC-011], [RC-012], [RC-013], [RC-015] | - | - | Covered |
+| CN-002 | [RC-011], [RC-012], [RC-013], [RC-015] | - | - | Covered |
+| CN-003 | [RC-003], [RC-016] | - | - | Covered |
+| CN-004 | [RC-003], [RC-016] | - | - | Covered |
+| CN-005 | [RC-014] | - | - | Covered |
+| CN-006 | [RC-016] | - | - | Covered |
+| CN-007 | [RC-003] | - | - | Covered |
 
 ## Open Inconsistencies
 
@@ -86,3 +88,5 @@ updated whenever an artifact instance is created or reviewed.
 [ADR-0001]: ../adr/adr-0001-image-source.md
 [RC-014]: reviews/rc-014-adr-0001.md
 [RC-015]: reviews/rc-015-code-mil-005.md
+[RC-016]: reviews/rc-016-wiki-mil-006.md
+[RC-017]: reviews/rc-017-code-mil-006.md
