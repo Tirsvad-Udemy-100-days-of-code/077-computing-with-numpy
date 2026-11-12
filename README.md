@@ -139,6 +139,25 @@ Module `computing_with_numpy.domain.generating`; the chart and the image are sav
 
 ![Challenge 8: the noise image](docs/images/11-noise-image.png)
 
+### Part 3: Broadcasting, scalars and matrix multiplication
+
+Module `computing_with_numpy.domain.linear_algebra`.
+
+| Lecture step | Function |
+| --- | --- |
+| Vector arithmetic | `add_vectors`, `multiply_vectors` |
+| Lists versus arrays | `add_lists`, `multiply_lists` |
+| Broadcasting a scalar | `scale_array` |
+| Matrix multiplication challenge | `matrix_product` (`create_matrix_a1`, `create_matrix_b1`) |
+
+![Linear algebra with vectors](docs/images/12-vector-math.png)
+
+![Lists versus arrays](docs/images/13-lists-vs-arrays.png)
+
+![Broadcasting a scalar](docs/images/14-broadcasting.png)
+
+![Matrix multiplication challenge](docs/images/15-matrix-product.png)
+
 ## 📄 License
 
 GNU Affero General Public License v3, see [LICENSE](./LICENSE).

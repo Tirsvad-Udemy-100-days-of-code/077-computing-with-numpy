@@ -17,7 +17,7 @@ def test_all_steps_include_the_three_basics_steps() -> None:
 
 def test_all_steps_include_the_eight_challenge_steps() -> None:
     slugs = [step.slug for step in all_steps()]
-    assert slugs[4:] == [
+    assert slugs[4:12] == [
         "04-arange",
         "05-slicing",
         "06-reverse",
@@ -29,8 +29,18 @@ def test_all_steps_include_the_eight_challenge_steps() -> None:
     ]
 
 
+def test_all_steps_end_with_the_four_linear_algebra_steps() -> None:
+    slugs = [step.slug for step in all_steps()]
+    assert slugs[12:] == [
+        "12-vector-math",
+        "13-lists-vs-arrays",
+        "14-broadcasting",
+        "15-matrix-product",
+    ]
+
+
 def test_challenge_steps_are_titled_by_number() -> None:
-    titles = [step.title for step in all_steps()[4:]]
+    titles = [step.title for step in all_steps()[4:12]]
     assert all(
         title.startswith(f"Challenge {number}:")
         for number, title in enumerate(titles, start=1)
