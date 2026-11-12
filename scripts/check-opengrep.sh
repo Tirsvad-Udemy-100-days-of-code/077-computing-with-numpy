@@ -5,14 +5,14 @@
 set -euo pipefail
 
 if command -v opengrep >/dev/null 2>&1; then
-  tool="opengrep"
+	tool="opengrep"
 elif [[ -x "$HOME/.opengrep/cli/latest/opengrep.exe" ]]; then
-  tool="$HOME/.opengrep/cli/latest/opengrep.exe"
+	tool="$HOME/.opengrep/cli/latest/opengrep.exe"
 elif [[ -x "$HOME/.opengrep/cli/latest/opengrep" ]]; then
-  tool="$HOME/.opengrep/cli/latest/opengrep"
+	tool="$HOME/.opengrep/cli/latest/opengrep"
 else
-  echo "opengrep not found: install it from https://github.com/opengrep/opengrep" >&2
-  exit 2
+	echo "opengrep not found: install it from https://github.com/opengrep/opengrep" >&2
+	exit 2
 fi
 
 cd "$(git rev-parse --show-toplevel)"
