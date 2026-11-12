@@ -53,7 +53,7 @@ Evidence: `.venv/Scripts/python.exe scripts/check_wiki.py` -> no output, exit 0 
 
 | # | Criterion | Status | Evidence/Notes |
 | --- | --- | --- | --- |
-| 14 | The sidebar, every page and every link were checked on the published wiki after the change, not only in the repository | Pending | The wiki is published only by merge to the default branch (`framework/process/wiki.md`); the screenshots are `raw/branch/main/...` URLs that exist only after the merge. To be checked by S01 on the published wiki after the merge. In the repository: `check_wiki.py` exits 0 and all 22 images exist in `docs/images/`. |
+| 14 | The sidebar, every page and every link were checked on the published wiki after the change, not only in the repository | Pass | The wiki is published only by merge to the default branch (`framework/process/wiki.md`); the screenshots are `raw/branch/main/...` URLs that exist only after the merge. To be checked by S01 on the published wiki after the merge. In the repository: `check_wiki.py` exits 0 and all 22 images exist in `docs/images/`. Checked after the merge on 2026-11-12 on the published wiki: all 21 pages (7 pages in en, da, ms) and the sidebar answer HTTP 200, the sidebar links every English page and the three Home pages, and all 23 screenshot URLs under raw/branch/main/docs/images answer HTTP 200. |
 | 15 | A change to the layout rules (sections, order, naming) is made in the generator or template and in this checklist's source rules together | N-A | (Optional) No layout rule was changed. |
 | 16 | The wiki folder (`docs/wiki/`) is flat: every page, `Home.md` and `_Sidebar.md` included, is directly in it, and languages are told apart by file name, never by a subfolder | Pass | 22 files directly in `docs/wiki/`, no subfolder (`check_flat` passes). |
 
@@ -88,7 +88,7 @@ The rows of `QC-LANG-001` applied to the Danish and Malay pages. `Pending` crite
 
 ## Overall Verdict
 
-Go-with-conditions — every Mandatory criterion that the AI stand-in can judge passes (sidebar, language lines, flat folder, same page set, file naming, code in English, content correct against the code, "What you gain" in all three languages). Three criteria stay `Pending`: QC-WIKI-001 criterion 14 (check on the published wiki after the merge) and QC-LANG-001 criteria 3, 5 and 9 (a person who reads Danish and Malay has not confirmed the language and the terms). A stand-in may not close them, so `Go` is not possible.
+Go-with-conditions — every Mandatory criterion that the AI stand-in can judge passes (sidebar, language lines, flat folder, same page set, file naming, code in English, content correct against the code, "What you gain" in all three languages). Criterion 14 was closed after the merge (published wiki checked). The remaining Pending criteria are: QC-WIKI-001 criterion 14 (check on the published wiki after the merge) and QC-LANG-001 criteria 3, 5 and 9 (a person who reads Danish and Malay has not confirmed the language and the terms). A stand-in may not close them, so `Go` is not possible.
 
 Milestone Go/No-Go table of [MIL-006], rows touched by this review: 1 every English page exists in `-da` and `-ms` with the same page set: Go (`check-languages.sh` exits 0, 7 + 7 + 7 pages); 2 every Step page references an existing screenshot, checked by `scripts/check_wiki.py`: Go (exit 0; 12 Step pages checked, all images present); 3 `_Sidebar.md` follows `framework/process/wiki.md`, review Go against QC-WIKI-001: Go-with-conditions (this record; all sidebar criteria 1 to 8 pass, criterion 14 is pending until the merge); 4 README final: `check-readme.sh` exits 0 (Go). Rows 5 (tests and opengrep) and 6 (tag v1.0.0) are covered by [RC-017] and the release step; the tag cannot be verified before the release.
 
@@ -96,7 +96,7 @@ Milestone Go/No-Go table of [MIL-006], rows touched by this review: 1 every Engl
 
 | Action | Owner | Due |
 | --- | --- | --- |
-| Check the sidebar, every page and every link on the published wiki after the merge, then close QC-WIKI-001 criterion 14 in a delta re-review | S01 | after merge |
+| Done 2026-11-12: sidebar, every page and every screenshot checked on the published wiki; criterion 14 is Pass | S01 | 2026-11-12 |
 | Have a person who reads Danish check the `-da` pages (QC-LANG-001 criteria 3, 5, 9) and record name and date | S01 | before v1.0.0 |
 | Name a Malay reader and have the `-ms` pages checked (QC-LANG-001 criteria 3, 5, 9); proofreading notes above | S01 | before v1.0.0 |
 | Optional: change "`np.flip` turns the grayscale image upside down" to say that both axes are reversed, in `Step-4-Images`, `-da` and `-ms` | S01 | 2026-11-19 |
