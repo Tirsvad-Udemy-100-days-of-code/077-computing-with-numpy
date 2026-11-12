@@ -108,6 +108,37 @@ Module `computing_with_numpy.domain.ndarray_basics`.
 
 ![N dimensions: the mystery array challenge](docs/images/03-mystery-array.png)
 
+### Part 2: Generating and manipulating ndarrays
+
+Module `computing_with_numpy.domain.generating`; the chart and the image are saved by `computing_with_numpy.infrastructure.screenshots`.
+
+| Challenge | Function |
+| --- | --- |
+| 1 `arange` | `create_range_vector` |
+| 2 slicing | `last_three`, `fourth_to_sixth`, `all_except_first_twelve`, `every_second` |
+| 3 reverse | `reverse_array`, `reverse_array_with_flip` |
+| 4 non-zero indices | `nonzero_indices` |
+| 5 random 3x3x3 | `random_cube` |
+| 6 `linspace` x | `linspace_x` |
+| 7 `linspace` y and line chart | `linspace_y`, `plot_line` |
+| 8 noise image | `noise_image`, `save_noise_image` |
+
+![Challenge 1: arange](docs/images/04-arange.png)
+
+![Challenge 2: slicing](docs/images/05-slicing.png)
+
+![Challenge 3: reverse](docs/images/06-reverse.png)
+
+![Challenge 4: non-zero indices](docs/images/07-nonzero.png)
+
+![Challenge 5: random](docs/images/08-random.png)
+
+![Challenge 6: linspace x](docs/images/09-linspace-x.png)
+
+![Challenge 7: linspace y and the line chart](docs/images/10-linspace-plot.png)
+
+![Challenge 8: the noise image](docs/images/11-noise-image.png)
+
 ## 📄 License
 
 GNU Affero General Public License v3, see [LICENSE](./LICENSE).

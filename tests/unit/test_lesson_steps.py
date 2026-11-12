@@ -12,7 +12,29 @@ def test_all_steps_start_with_setup() -> None:
 
 def test_all_steps_include_the_three_basics_steps() -> None:
     slugs = [step.slug for step in all_steps()]
-    assert slugs[1:] == ["01-vector", "02-matrix", "03-mystery-array"]
+    assert slugs[1:4] == ["01-vector", "02-matrix", "03-mystery-array"]
+
+
+def test_all_steps_include_the_eight_challenge_steps() -> None:
+    slugs = [step.slug for step in all_steps()]
+    assert slugs[4:] == [
+        "04-arange",
+        "05-slicing",
+        "06-reverse",
+        "07-nonzero",
+        "08-random",
+        "09-linspace-x",
+        "10-linspace-plot",
+        "11-noise-image",
+    ]
+
+
+def test_challenge_steps_are_titled_by_number() -> None:
+    titles = [step.title for step in all_steps()[4:]]
+    assert all(
+        title.startswith(f"Challenge {number}:")
+        for number, title in enumerate(titles, start=1)
+    )
 
 
 def test_all_steps_have_unique_slugs() -> None:
