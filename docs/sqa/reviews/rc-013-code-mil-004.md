@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [baf70b4] |
 
 ---
 
@@ -63,3 +63,4 @@ Milestone Go/No-Go table of [MIL-004], row by row: 1 `add_vectors` gives [6, 6, 
 
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [MIL-004]: ../../milestones/mil-004-broadcasting-matmul.md
+[baf70b4]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/baf70b41a5da2da8a0ff4e934994102b9138545e
