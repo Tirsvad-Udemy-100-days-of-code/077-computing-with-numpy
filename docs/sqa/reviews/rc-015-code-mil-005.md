@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [64a7682] |
 
 ---
 
@@ -69,3 +69,4 @@ Observation outside this record's scope: the Version History of ADR-0001 now has
 [MIL-005]: ../../milestones/mil-005-images-as-ndarrays.md
 [ADR-0001]: ../../adr/adr-0001-image-source.md
 [RC-014]: ./rc-014-adr-0001.md
+[64a7682]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/64a7682c30eed7cd1111ed72b9e8ccde7d7b69a1

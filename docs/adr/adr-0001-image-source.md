@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Accepted after RC-014 (Go) | pending |
+| 2026-11-12 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [64a7682] |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Accepted after RC-014 (Go) | [64a7682] |
 
 Allowed Status values: `Proposed`, `Accepted`, `Rejected`, `Deprecated`, `Superseded by ADR-NNNN`.
 
@@ -51,3 +51,4 @@ Use option 3: `load_face_image()` returns a generated 768 x 1024 x 3 `uint8` pic
 
 [BC-001]: ../business-case.md
 [MIL-005]: ../milestones/mil-005-images-as-ndarrays.md
+[64a7682]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/64a7682c30eed7cd1111ed72b9e8ccde7d7b69a1
