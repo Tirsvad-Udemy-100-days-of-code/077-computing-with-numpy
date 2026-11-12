@@ -11,7 +11,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | [ea0c2d7] |
 
 ---
 
@@ -72,3 +72,4 @@ Module `computing_with_numpy.images` with image loading, inspection, grayscale c
 
 [BC-001]: ../business-case.md
 [SA-001]: ../stakeholder-analysis.md
+[ea0c2d7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/ea0c2d7ed4eb1e98937384a8d8b5bf386f457529

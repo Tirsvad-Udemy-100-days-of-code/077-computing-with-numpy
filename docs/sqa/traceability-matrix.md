@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | pending |
+| 2026-11-12 | Accepted | Jens Tirsvad Nielsen | S01 | Initial version | [ea0c2d7] |
 
 ---
 
@@ -70,3 +70,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-007]: reviews/rc-007-mil-005.md
 [MIL-006]: ../milestones/mil-006-wiki-and-release.md
 [RC-008]: reviews/rc-008-mil-006.md
+[ea0c2d7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/ea0c2d7ed4eb1e98937384a8d8b5bf386f457529

@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Full re-review after rework of BC-001: earlier No-Go findings resolved, verdict Go-with-conditions | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [ea0c2d7] |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Full re-review after rework of BC-001: earlier No-Go findings resolved, verdict Go-with-conditions | [ea0c2d7] |
 
 ---
 
@@ -69,3 +69,4 @@ Go — no criterion fails except the Optional ones fixed or recorded; QC-LANG-00
 [BC-001]: ../../business-case.md
 [QC-BC-001]: ../../../framework/qc/artifacts/qc-business-case.md
 [QC-LANG-001]: ../../../framework/qc/artifacts/qc-language-domain.md
+[ea0c2d7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/ea0c2d7ed4eb1e98937384a8d8b5bf386f457529
