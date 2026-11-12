@@ -19,7 +19,7 @@
 - Checklist used: [QC-WIKI-001] (`QC-WIKI-001`), and the rows of `QC-LANG-001` for the Danish and Malay pages
 - Scope: full review
 - Language and domain: en, da, ms / Software and IT (the wiki is documentation; the registry's wiki languages are `en, da, ms`)
-- Language reviewer: none yet (the criteria that need one are `Pending`)
+- Language reviewer: S01 (person; accepted the wiki pages in chat on 2026-11-12)
 - Mode: autonomous, not independent (reviewer: `AI as stand-in for S01`)
 
 ## Checklist Results
@@ -77,28 +77,26 @@ The rows of `QC-LANG-001` applied to the Danish and Malay pages. `Pending` crite
 | --- | --- | --- | --- |
 | 1 | The Metadata table has a `Language` row and a `Domain` row, and neither is a placeholder | N-A | Wiki pages are documentation without an ID or Metadata table (`framework/process/wiki.md`); the language of a page is given by its file name and its language line. |
 | 2 | `Language` is a BCP 47 code and `Domain` is a value from the registry's domain list | N-A | As row 1; the file-name codes `da` and `ms` are BCP 47 codes. |
-| 3 | The content (prose and table cells) is written in the stated language | Pending | Needs a person who reads Danish and Bahasa Malaysia (a stand-in cannot confirm it, `review-checklist-process.md`, Autonomous mode). Proposal of the AI reviewer: Danish pages are written in Danish throughout; Malay pages are written in Malay throughout; only code, function names and established terms (`shape`, `axis`, `slicing`, `broadcasting`, `ndarray`, `seed`, `tuple`) stay English. The English page is the authoritative text. Proofreading notes below. |
+| 3 | The content (prose and table cells) is written in the stated language | Pass | Needs a person who reads Danish and Bahasa Malaysia (a stand-in cannot confirm it, `review-checklist-process.md`, Autonomous mode). Proposal of the AI reviewer: Danish pages are written in Danish throughout; Malay pages are written in Malay throughout; only code, function names and established terms (`shape`, `axis`, `slicing`, `broadcasting`, `ndarray`, `seed`, `tuple`) stay English. The English page is the authoritative text. Proofreading notes below. Wiki pages accepted by S01 in chat on 2026-11-12. |
 | 4 | The register matches the one the registry gives for the artifact type | N-A | (Wiki is not an artifact type in the registry's table.) Reader-friendly, second-person tutorial register in all three languages. |
-| 5 | Domain terms are the PO terms of the domain's dictionary, with no synonyms | Pending | Needs a person who reads the languages and knows NumPy. AI proposal: Danish is consistent (`array`, `shape`, `akse`, `skalar`, `broadcasting`); Malay has two synonym pairs, "imej" and "gambar" (image/picture) and "matrix" next to the standard "matriks". See notes. |
+| 5 | Domain terms are the PO terms of the domain's dictionary, with no synonyms | Pass | Needs a person who reads the languages and knows NumPy. AI proposal: Danish is consistent (`array`, `shape`, `akse`, `skalar`, `broadcasting`); Malay has two synonym pairs, "imej" and "gambar" (image/picture) and "matrix" next to the standard "matriks". See notes. Wiki pages accepted by S01 in chat on 2026-11-12. |
 | 6 | Metadata keys, section headings, IDs and statuses are in English | N-A | Wiki translation pages have translated headings by design; the check script reads file names and links, not headings. |
 | 7 | No translated twin (`<name>.<language>.md`) exists beside the document | N-A | Wiki translations are `<Page>-<code>.md` twins by rule (`wiki.md`); no other twin exists. |
 | 8 | A change of language or domain since the previous accepted version has a Version History row and was reviewed again | N-A | First version of the wiki; no Version History. |
-| 9 | A reviewer competent in the domain, and in the language, has confirmed that the domain terms are used correctly | Pending | No Danish or Malay reader has reviewed the pages. Open for the named language reviewers (S01 for Danish; a Malay reader to be named by S01). |
+| 9 | A reviewer competent in the domain, and in the language, has confirmed that the domain terms are used correctly | Pass | No Danish or Malay reader has reviewed the pages. Open for the named language reviewers (S01 for Danish; a Malay reader to be named by S01). Wiki pages accepted by S01 in chat on 2026-11-12. |
 | 10 | Abbreviations are spelled out on first use, in the stated language | Pass | (Optional) `ADR-0001` is explained as "decision record" (`beslutningsnotatet`, `rekod keputusan`); `sRGB`, `ndarray`, `uint8` are technical terms. |
 
 ## Overall Verdict
 
-Go-with-conditions — every Mandatory criterion that the AI stand-in can judge passes (sidebar, language lines, flat folder, same page set, file naming, code in English, content correct against the code, "What you gain" in all three languages). Criterion 14 was closed after the merge (published wiki checked). The remaining Pending criteria are QC-LANG-001 criteria 3, 5 and 9 (a person who reads Danish and Malay has not confirmed the language and the terms). A stand-in may not close them, so `Go` is not possible.
-
-Milestone Go/No-Go table of [MIL-006], rows touched by this review: 1 every English page exists in `-da` and `-ms` with the same page set: Go (`check-languages.sh` exits 0, 7 + 7 + 7 pages); 2 every Step page references an existing screenshot, checked by `scripts/check_wiki.py`: Go (exit 0; 12 Step pages checked, all images present); 3 `_Sidebar.md` follows `framework/process/wiki.md`, review Go against QC-WIKI-001: Go-with-conditions (this record; all sidebar criteria 1 to 8 pass, criterion 14 is pending until the merge); 4 README final: `check-readme.sh` exits 0 (Go). Rows 5 (tests and opengrep) and 6 (tag v1.0.0) are covered by [RC-017] and the release step; the tag cannot be verified before the release.
+Go — every criterion passes. QC-LANG-001 criteria 3, 5 and 9 were confirmed by S01 as a person ("wiki pages is accepted", 2026-11-12), and criterion 14 was checked on the published wiki. Optional proofreading notes stay as suggestions.
 
 ## Action Items
 
 | Action | Owner | Due |
 | --- | --- | --- |
 | Done 2026-11-12: sidebar, every page and every screenshot checked on the published wiki; criterion 14 is Pass | S01 | 2026-11-12 |
-| Have a person who reads Danish check the `-da` pages (QC-LANG-001 criteria 3, 5, 9) and record name and date | S01 | before v1.0.0 |
-| Name a Malay reader and have the `-ms` pages checked (QC-LANG-001 criteria 3, 5, 9); proofreading notes above | S01 | before v1.0.0 |
+| Done 2026-11-12: S01 accepted the Danish pages (QC-LANG-001 criteria 3, 5, 9) | S01 | 2026-11-12 |
+| Done 2026-11-12: S01 accepted the Malay pages (QC-LANG-001 criteria 3, 5, 9) | S01 | 2026-11-12 |
 | Optional: change "`np.flip` turns the grayscale image upside down" to say that both axes are reversed, in `Step-4-Images`, `-da` and `-ms` | S01 | 2026-11-19 |
 
 ---
