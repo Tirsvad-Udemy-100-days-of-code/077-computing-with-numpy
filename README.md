@@ -158,6 +158,33 @@ Module `computing_with_numpy.domain.linear_algebra`.
 
 ![Matrix multiplication challenge](docs/images/15-matrix-product.png)
 
+### Part 4: Images as ndarrays
+
+Module `computing_with_numpy.domain.images`; files are read and written by `computing_with_numpy.infrastructure.images`. The lecture's raccoon picture comes from `scipy.misc.face()`, which no longer exists and whose replacement needs a download. This project generates a picture of the same size instead (decision [ADR-0001][ADR-0001]); `load_image(path)` opens any 3-channel picture of your own.
+
+| Lecture step | Function |
+| --- | --- |
+| Type, shape, resolution | `load_face_image`, `describe_image` |
+| Grayscale | `to_grayscale` |
+| Flip upside down | `flip_image` |
+| Rotate | `rotate_image` |
+| Invert (solarize) | `invert_image` |
+| Your own image | `load_image`, `save_image` |
+
+![Images are ndarrays](docs/images/16-image-info.png)
+
+![Show the image](docs/images/17-image-show.png)
+
+![Convert the image to grayscale](docs/images/18-grayscale.png)
+
+![Flip the grayscale image](docs/images/19-flip-gray.png)
+
+![Rotate the colour image](docs/images/20-rotate.png)
+
+![Invert the colour image](docs/images/21-invert.png)
+
+![Use your own image](docs/images/22-own-image.png)
+
 ## 📄 License
 
 GNU Affero General Public License v3, see [LICENSE](./LICENSE).
@@ -178,6 +205,7 @@ GNU Affero General Public License v3, see [LICENSE](./LICENSE).
 | [Project Plan][PP-001] | The gateways and their schedule |
 | [Milestones][milestones] | One document per gateway: Go/No-Go criteria and tasks |
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
+| [Decision record ADR-0001][ADR-0001] | Why the raccoon picture is generated, not downloaded |
 | [Traceability matrix][TM-001] | How the artifacts link and when each was last reviewed |
 | [Framework README][framework-readme] | The framework this project uses |
 | [Framework changelog][framework-changelog] | What changed in each framework release |
@@ -194,5 +222,6 @@ GNU Affero General Public License v3, see [LICENSE](./LICENSE).
 [milestones]: ./docs/milestones/
 [registry]: ./docs/artifact-registry.md
 [TM-001]: ./docs/sqa/traceability-matrix.md
+[ADR-0001]: ./docs/adr/adr-0001-image-source.md
 [framework-readme]: ./framework/README.md
 [framework-changelog]: ./framework/CHANGELOG.md

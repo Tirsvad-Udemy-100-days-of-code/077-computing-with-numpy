@@ -5,6 +5,7 @@ from __future__ import annotations
 from computing_with_numpy.application.lesson_step import LessonStep
 from computing_with_numpy.application.steps_basics import basics_steps
 from computing_with_numpy.application.steps_generating import generating_steps
+from computing_with_numpy.application.steps_images import images_steps
 from computing_with_numpy.application.steps_linear_algebra import linear_algebra_steps
 from computing_with_numpy.application.steps_setup import setup_steps
 
@@ -18,4 +19,5 @@ def all_steps() -> list[LessonStep]:
         *basics_steps(),
         *generating_steps(),
         *linear_algebra_steps(),
+        *images_steps(),
     ]
