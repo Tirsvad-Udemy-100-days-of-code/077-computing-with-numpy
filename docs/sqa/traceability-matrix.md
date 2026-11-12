@@ -34,6 +34,7 @@ updated whenever an artifact instance is created or reviewed.
 | [MIL-006] | MIL | en | it | [BC-001], [PP-001] | tasks | [RC-008] |
 | `src/`, `tests/`, `scripts/` (MIL-001) | Python code | - | - | [MIL-001] | - | [RC-009] |
 | `.gitea/workflows/tests.yml` | Workflow | - | - | [MIL-001] | - | [RC-010] |
+| `src/`, `tests/`, `scripts/` (MIL-002) | Python code | - | - | [MIL-002] | - | [RC-011] |
 
 ## Concern Coverage
 
@@ -75,3 +76,4 @@ updated whenever an artifact instance is created or reviewed.
 [ea0c2d7]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/ea0c2d7ed4eb1e98937384a8d8b5bf386f457529
 [RC-009]: reviews/rc-009-code-mil-001.md
 [RC-010]: reviews/rc-010-workflow-mil-001.md
+[RC-011]: reviews/rc-011-code-mil-002.md

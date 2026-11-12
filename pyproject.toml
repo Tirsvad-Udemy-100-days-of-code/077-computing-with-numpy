@@ -24,6 +24,8 @@ dev = [
     "yamllint>=1.35",
     "jupyterlab>=4.3",
     "nbclient>=0.10",
+    "nbformat>=5.10",
+    "ipykernel>=6.29",
 ]
 
 [project.scripts]
@@ -52,3 +54,17 @@ ignore = ["D203", "D213"]
 [tool.mypy]
 strict = true
 python_version = "3.13"
+
+[[tool.mypy.overrides]]
+module = ["nbformat.*", "nbclient.*"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# nbformat ships partial type hints; its builder functions are untyped.
+module = [
+    "computing_with_numpy.infrastructure.notebook",
+    "tests.unit.test_notebook_screenshots",
+    "test_notebook_screenshots",
+]
+disallow_untyped_calls = false
+warn_return_any = false
