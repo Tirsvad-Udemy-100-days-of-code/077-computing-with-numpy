@@ -21,7 +21,7 @@ Decide whether vector arithmetic, broadcasting with scalars and matrix multiplic
 
 ## Deliverable
 
-Module `computing_with_numpy.linear_algebra` with vector addition and multiplication, scalar broadcasting and the matrix multiplication challenge, tests, notebook section, README section and screenshots.
+Module `computing_with_numpy.domain.linear_algebra` with vector addition and multiplication, scalar broadcasting and the matrix multiplication challenge, tests, notebook section, README section and screenshots.
 
 ## Go / No-Go Criteria
 

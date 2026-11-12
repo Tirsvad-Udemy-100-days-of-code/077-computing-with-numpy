@@ -21,7 +21,7 @@ Decide whether challenges 1 to 8 (arange, slicing, flip, nonzero, random, linspa
 
 ## Deliverable
 
-Module `computing_with_numpy.generating` with one function per challenge, tests, notebook section, README section and screenshots, including the line chart and the noise image.
+Module `computing_with_numpy.domain.generating` with one function per challenge, tests, notebook section, README section and screenshots, including the line chart and the noise image.
 
 ## Go / No-Go Criteria
 

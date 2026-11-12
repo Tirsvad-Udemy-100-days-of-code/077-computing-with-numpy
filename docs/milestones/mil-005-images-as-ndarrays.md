@@ -21,7 +21,7 @@ Decide whether images as ndarrays (type, shape, grayscale, flip, rotate, invert,
 
 ## Deliverable
 
-Module `computing_with_numpy.images` with image loading, inspection, grayscale conversion, flip, rotation, inversion and own-image loading, tests, notebook section, README section and screenshots. An architecture decision record (ADR) records the image source decision.
+Module `computing_with_numpy.domain.images` with image loading, inspection, grayscale conversion, flip, rotation, inversion and own-image loading, tests, notebook section, README section and screenshots. An architecture decision record (ADR) records the image source decision.
 
 ## Go / No-Go Criteria
 

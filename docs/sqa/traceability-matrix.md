@@ -35,6 +35,7 @@ updated whenever an artifact instance is created or reviewed.
 | `src/`, `tests/`, `scripts/` (MIL-001) | Python code | - | - | [MIL-001] | - | [RC-009] |
 | `.gitea/workflows/tests.yml` | Workflow | - | - | [MIL-001] | - | [RC-010] |
 | `src/`, `tests/`, `scripts/` (MIL-002) | Python code | - | - | [MIL-002] | - | [RC-011] |
+| `src/`, `tests/`, `scripts/` (MIL-003) | Python code | - | - | [MIL-003] | - | [RC-012] |
 
 ## Concern Coverage
 
@@ -77,3 +78,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-009]: reviews/rc-009-code-mil-001.md
 [RC-010]: reviews/rc-010-workflow-mil-001.md
 [RC-011]: reviews/rc-011-code-mil-002.md
+[RC-012]: reviews/rc-012-code-mil-003.md
