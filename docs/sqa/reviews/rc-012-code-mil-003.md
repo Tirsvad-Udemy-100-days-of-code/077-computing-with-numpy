@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Delta re-review of criterion 14: Go | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [b8e25e0] |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Delta re-review of criterion 14: Go | [b8e25e0] |
 
 ---
 
@@ -64,3 +64,4 @@ Milestone Go/No-Go table of [MIL-003], row by row: 1 `create_range_vector()` ret
 
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [MIL-003]: ../../milestones/mil-003-generating-ndarrays.md
+[b8e25e0]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/b8e25e06565206dd9fcc052d67826da3d186774e
