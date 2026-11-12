@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Delta re-review of criteria 12, 14, 15: Go | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [ddef727] |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Delta re-review of criteria 12, 14, 15: Go | [ddef727] |
 
 ---
 
@@ -64,3 +64,4 @@ Milestone Go/No-Go table of [MIL-002], judged on this evidence: 1 `mystery_array
 
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [MIL-002]: ../../milestones/mil-002-ndarray-basics.md
+[ddef727]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/ddef7273a985050587a557d2540766928bfd259c
