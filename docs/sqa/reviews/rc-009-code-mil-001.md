@@ -9,8 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Delta re-review of criteria 11, 13, 14: Go | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [cf69fb1] |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Delta re-review of criteria 11, 13, 14: Go | [cf69fb1] |
 
 ---
 
@@ -62,3 +62,4 @@ Go — the delta re-review of criteria 11, 13 and 14 (earlier verdict No-Go) fin
 
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
 [MIL-001]: ../../milestones/mil-001-project-setup.md
+[cf69fb1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/cf69fb1dfe026d01c46504cba80476abfc144630
