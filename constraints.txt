@@ -1,0 +1,8 @@
+# Versions the tests and CI are known to pass with (pip install -c constraints.txt).
+numpy==2.5.4
+matplotlib==3.11.2
+pillow==13.0.0
+pytest==9.2.0
+ruff==0.17.4
+mypy==2.4.1
+yamllint==1.38.0

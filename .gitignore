@@ -1,3 +1,41 @@
+# Personal tokens: never committed, never read by the project
 .env
-.venv/
+
+# AI prompt log (this repository is public)
 /docs/ai-prompts/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Byte-compiled and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# Packaging and build output
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
