@@ -10,6 +10,7 @@ Day 77 of Udemy's "100 Days of Code: The Complete Python Pro Bootcamp": NumPy nd
 - [Run](#-run)
 - [Tests](#-tests)
 - [Lecture steps](#-lecture-steps)
+- [Wiki](#-wiki)
 - [License](#-license)
 - [Links](#-links)
 - [Appendix: Project documents](#-appendix-project-documents)
@@ -25,7 +26,7 @@ Day 77 of Udemy's "100 Days of Code: The Complete Python Pro Bootcamp": NumPy nd
 | `tests/` | One test per challenge result stated in the lecture |
 | `notebooks/` | The Jupyter notebook that walks through the lecture |
 | `docs/` | Project documents, screenshots (`docs/images/`) and the wiki (`docs/wiki/`) |
-| `scripts/` | Screenshot generator and the opengrep check |
+| `scripts/` | Screenshot generator, wiki check and the opengrep check |
 
 ## 📋 Requirements
 
@@ -184,6 +185,14 @@ Module `computing_with_numpy.domain.images`; files are read and written by `comp
 ![Invert the colour image](docs/images/21-invert.png)
 
 ![Use your own image](docs/images/22-own-image.png)
+
+## 📖 Wiki
+
+The [wiki][documentation] explains what each lecture step teaches and what you gain from it, in English, Danish (`-da`) and Bahasa Malaysia (`-ms`). The pages live in `docs/wiki/` and reach the host wiki by merge; check them with:
+
+```bash
+python scripts/check_wiki.py
+```
 
 ## 📄 License
 
