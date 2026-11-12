@@ -13,20 +13,26 @@ FOREGROUND = "#d4d4d4"
 ACCENT = "#4ec9b0"
 LINE_HEIGHT = 0.3
 MIN_HEIGHT = 1.4
-WIDTH = 9.0
+MIN_WIDTH = 4.0
+# Inches per character of 10 pt monospace text (about 6.0 pt) plus headroom.
+CHAR_WIDTH = 0.092
+MARGIN = 0.25
 
 
 def render_text_screenshot(title: str, lines: tuple[str, ...], path: Path) -> Path:
     """Draw a terminal-like screenshot of ``lines`` under ``title`` into ``path``."""
     height = max(MIN_HEIGHT, LINE_HEIGHT * (len(lines) + 2))
-    figure = Figure(figsize=(WIDTH, height), dpi=100, facecolor=BACKGROUND)
+    longest = max([len(title), *(len(line) for line in lines)])
+    width = max(MIN_WIDTH, longest * CHAR_WIDTH + 2 * MARGIN)
+    figure = Figure(figsize=(width, height), dpi=100, facecolor=BACKGROUND)
     FigureCanvasAgg(figure)
     axes = figure.add_axes((0, 0, 1, 1))
     axes.set_axis_off()
     axes.set_xlim(0, 1)
     axes.set_ylim(0, 1)
+    left = MARGIN / width
     axes.text(
-        0.02,
+        left,
         1 - LINE_HEIGHT / height,
         title,
         color=ACCENT,
@@ -37,7 +43,7 @@ def render_text_screenshot(title: str, lines: tuple[str, ...], path: Path) -> Pa
     for index, line in enumerate(lines):
         y_position = 1 - (LINE_HEIGHT * (index + 2)) / height
         axes.text(
-            0.02,
+            left,
             y_position,
             line,
             color=FOREGROUND,

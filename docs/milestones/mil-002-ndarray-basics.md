@@ -21,7 +21,7 @@ Decide whether the lecture part "NumPy's ndarray" (1D, 2D and N-D arrays, shape,
 
 ## Deliverable
 
-Module `computing_with_numpy.ndarray_basics` with the functions for 1D, 2D and N-D arrays and the mystery array challenge, its tests, the notebook section, README section and screenshots.
+Module `computing_with_numpy.domain.ndarray_basics` with the functions for 1D, 2D and N-D arrays and the mystery array challenge, its tests, the notebook section, README section and screenshots.
 
 ## Go / No-Go Criteria
 

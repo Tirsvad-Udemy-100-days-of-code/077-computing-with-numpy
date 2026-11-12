@@ -64,7 +64,7 @@ Without the development tools, install `python -m pip install -e .` instead.
 ```bash
 python -m computing_with_numpy
 jupyter lab notebooks/computing_with_numpy.ipynb
-python scripts/make_screenshots.py
+python scripts/make_screenshots.py   # rebuilds the notebook and the screenshots
 ```
 
 The first command prints every lecture step; the last one rewrites the screenshots in `docs/images/`. Charts are saved to files, so no window opens.
@@ -90,7 +90,23 @@ bash scripts/check-opengrep.sh
 
 ## 🖼️ Lecture steps
 
-The setup step is shown above. Each later milestone adds its steps, their functions and a screenshot here.
+Every screenshot is the real output of a notebook cell: `python scripts/make_screenshots.py` builds and runs `notebooks/computing_with_numpy.ipynb` and rewrites `docs/images/`.
+
+### Part 1: NumPy's ndarray
+
+Module `computing_with_numpy.domain.ndarray_basics`.
+
+| Lecture step | Function |
+| --- | --- |
+| 1 dimension | `create_vector`, `describe_array`, `vector_element` |
+| 2 dimensions | `create_matrix`, `matrix_element`, `matrix_row` |
+| Mystery array challenge | `mystery_array`, `mystery_value_18`, `mystery_last_row_vector`, `mystery_first_elements_matrix` |
+
+![1 dimension: a vector](docs/images/01-vector.png)
+
+![2 dimensions: a matrix](docs/images/02-matrix.png)
+
+![N dimensions: the mystery array challenge](docs/images/03-mystery-array.png)
 
 ## 📄 License
 
