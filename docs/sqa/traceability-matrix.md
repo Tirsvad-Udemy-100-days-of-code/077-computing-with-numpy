@@ -37,6 +37,8 @@ updated whenever an artifact instance is created or reviewed.
 | `src/`, `tests/`, `scripts/` (MIL-002) | Python code | - | - | [MIL-002] | - | [RC-011] |
 | `src/`, `tests/`, `scripts/` (MIL-003) | Python code | - | - | [MIL-003] | - | [RC-012] |
 | `src/`, `tests/`, `scripts/` (MIL-004) | Python code | - | - | [MIL-004] | - | [RC-013] |
+| [ADR-0001] | ADR | - | - | [BC-001], [MIL-005] | - | [RC-014] |
+| `src/`, `tests/`, `scripts/` (MIL-005) | Python code | - | - | [MIL-005] | - | [RC-015] |
 
 ## Concern Coverage
 
@@ -81,3 +83,6 @@ updated whenever an artifact instance is created or reviewed.
 [RC-011]: reviews/rc-011-code-mil-002.md
 [RC-012]: reviews/rc-012-code-mil-003.md
 [RC-013]: reviews/rc-013-code-mil-004.md
+[ADR-0001]: ../adr/adr-0001-image-source.md
+[RC-014]: reviews/rc-014-adr-0001.md
+[RC-015]: reviews/rc-015-code-mil-005.md

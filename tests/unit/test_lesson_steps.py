@@ -29,13 +29,26 @@ def test_all_steps_include_the_eight_challenge_steps() -> None:
     ]
 
 
-def test_all_steps_end_with_the_four_linear_algebra_steps() -> None:
+def test_all_steps_include_the_four_linear_algebra_steps() -> None:
     slugs = [step.slug for step in all_steps()]
-    assert slugs[12:] == [
+    assert slugs[12:16] == [
         "12-vector-math",
         "13-lists-vs-arrays",
         "14-broadcasting",
         "15-matrix-product",
+    ]
+
+
+def test_all_steps_end_with_the_seven_image_steps() -> None:
+    slugs = [step.slug for step in all_steps()]
+    assert slugs[16:] == [
+        "16-image-info",
+        "17-image-show",
+        "18-grayscale",
+        "19-flip-gray",
+        "20-rotate",
+        "21-invert",
+        "22-own-image",
     ]
 
 

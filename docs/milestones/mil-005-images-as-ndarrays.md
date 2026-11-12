@@ -64,7 +64,7 @@ Module `computing_with_numpy.domain.images` with image loading, inspection, gray
 | --- | --- | --- | --- | --- |
 | 1 | Decide the raccoon image source in an ADR | Record whether the image comes from the lecture zip kept in the repository, from `scipy.datasets.face` as an optional extra, or from a generated stand-in; consider S03's wish for few runtime dependencies and the licence of the image. | No | |
 | 2 | Implement image loading and inspection | Add `load_face_image`, `load_image` (Pillow (PIL) to ndarray) and `describe_image` (type, shape, ndim, resolution) with tests. | No | |
-| 3 | Implement grayscale conversion | Add `to_grayscale` using the sRGB division by 255 and the matrix product with the grey values, and `show_gray` that saves the result with cmap gray. | No | |
+| 3 | Implement grayscale conversion | Add `to_grayscale` using the sRGB division by 255 and the matrix product with the grey values, and `save_gray_image` (the lecture's display step) that saves the result with cmap gray. | No | |
 | 4 | Implement flip, rotate and invert | Add `flip_image` (np.flip), `rotate_image` (np.rot90) and `invert_image` (255 - img) with tests on small known arrays and the full image. | No | |
 | 5 | Add notebook section and screenshots for images | Extend the notebook and generate one screenshot per step including the grayscale, flipped, rotated and solarized images; reference them from the README. | No | |
 
