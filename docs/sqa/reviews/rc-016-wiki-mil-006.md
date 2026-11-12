@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-11-12 | Proposed | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [3eeea8c] |
 
 ---
 
@@ -107,3 +107,4 @@ Milestone Go/No-Go table of [MIL-006], rows touched by this review: 1 every Engl
 [MIL-006]: ../../milestones/mil-006-wiki-and-release.md
 [ADR-0001]: ../../adr/adr-0001-image-source.md
 [RC-017]: ./rc-017-code-mil-006.md
+[3eeea8c]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/077-computing-with-numpy/commit/3eeea8ccb578d75a550f8aa08d2cbeebc06f4f30
